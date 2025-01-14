@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To do list basic</title>
+    <link rel="stylesheet" href="./content/css/tDt.css">
+    <link rel="stylesheet" href="./content/asets/fonts/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="./content/asets/fonts/all.min.css" -->
+</head>
+<body>
+    <div class="d-flex justify-content-between nav_bar">
+        <h4>Flex To Do</h4>
+        <p>Acount</p>
+    </div>
+    <section>
+        <div class="container">
+            <div class="text-center">
+                <h1 class="m-5 text ">To do <span class="auto-type"></span></h1>
+                <input type="text" id="inputText" placeholder="Add your task" class="form-control text-center p-3 mb-3 pt-2 m-auto">
+               <div class="mb-4">
+                   <button class="btn btn-outline-primary add" onclick="addToDo()">Just Add</button>
+                   <button class="btn btn-outline-danger" onclick="deleteAll()">Clear All</button>
+               </div>
+                <ul class="toDoListUL" id="toDoList" >
+                    <p>start in writing it your first job now... </p>
+                     <!-- <li class="styleOfList"><span><input type="checkbox" class="m-2">html</span><span class="setting">... 
+                        <div id="chooseOne" class="chooseOne">
+                            <ul>
+                               <li class="btn_del">Delete</li>
+                               <li class="btn_update">Update</li>
+                               </ul>
+                           </div>
+                     </span>
+                    </li> -->
+                   
+                </ul>
+            </div>
+         
+        </div>
+    </section>
+    <script src="./content/js/index.js"></script>
+    <script src="./content/asets/fonts/all.min.js"
+<script src="./content/asets/fonts/bootstrap.bundle.min.js"></script>
+</body>
+</html>

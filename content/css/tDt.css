@@ -1,0 +1,136 @@
+body{
+    background:linear-gradient(to left ,rgb(255, 249, 249),rgb(92, 83, 83), rgb(0, 0, 0)) !important;
+}
+.nav_bar{
+    background-color: rgba(0, 0, 0, 0.363);
+    color: rgba(255, 255, 255, 0.884);
+    box-sizing: border-box;
+    padding: 5px;
+    align-items: center;
+    font-weight: bold;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+li {
+    list-style-type: none;
+}
+li .styleOfList{
+   
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    border-radius: 5px;
+    box-shadow: 4px 1px 10px rgb(185, 185, 185);
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+li .styleOfList:hover{
+  background-color: rgb(238, 235, 235);
+}
+section{
+    width: 30%;
+    margin: auto;
+    margin-top: 50px;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: rgb(230, 230, 230);
+    box-shadow: 3px 5px 10px rgb(107, 106, 106);
+}
+section .toDoListUL{
+position: relative !important;
+padding: 0;
+}
+/* .chooseOne ul .btn_del{
+    margin-bottom: 10px;
+}
+
+.chooseOne ul{
+    list-style-type: none;
+    padding: 0;
+} */
+
+ /*
+ .chooseOne{
+    z-index: 22;
+    transition: transform 0.3s;
+    transform-origin: bottom right;
+    transform: scale(0);
+    font-size: 12px;
+    border: 0;
+    background-color: white;
+    padding: 10px 0;
+    position:absolute;
+    right: 0px;
+    top: 0;
+    border-radius: 5px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    cursor: pointer;
+    width: 10%; 
+    box-shadow: 1px 1px 5px black;
+    display: none;
+} 
+    */
+.edit{
+   cursor: pointer;
+}
+.boxInput{
+    cursor: pointer;
+}
+.icons_edit{
+    display: none;
+    /* transition: .5s; */
+    animation-name:examp ;
+    animation-duration: .5s;
+    margin-right: 10px;
+}
+.delete_row{
+    color: rgba(255, 0, 0, 0.733);
+}
+.updet_row{
+    color: rgba(0, 0, 255, 0.534);
+}
+@keyframes examp{
+    from{
+        transform: translate(-30px,0);
+        opacity: 0;
+    }
+    to{
+        transform: translate(0, 0);
+        opacity: 1;
+    }
+}
+.edit:hover  .icons_edit{
+display: inline-block;
+}
+
+/* .setting:hover .chooseOne {
+    transform: scale(1);
+} */
+/* .chooseOne ul li:hover{
+background-color: rgb(235, 240, 245);
+} */
+.hidden{
+    display: block;
+}
+
+input{
+    caret-color: blue;
+}
+.teXt{
+    border-right: 1px solid;
+    /* width: 100%; */
+    letter-spacing: 10px;
+    white-space: nowrap;
+    overflow: hidden;       
+    animation: typing 2s,
+    cursor .4s step-end infinite alternate;
+}
+@keyframes cursor{
+    50% {border-color: transparent;}
+}
+
+@keyframes typing{
+    form {width: 0%;}
+}
+.checked{
+    text-decoration: line-through;
+}
